@@ -1,0 +1,162 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local menuhack = Instance.new("Frame")
+local tenmoihub = Instance.new("TextLabel")
+local nutexit = Instance.new("TextButton")
+local WAzureV2 = Instance.new("TextButton")
+local speedhub = Instance.new("TextButton")
+local RedzHub = Instance.new("TextButton")
+local AnbatocomHub = Instance.new("TextButton")
+local mota = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local on = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+menuhack.Name = "menuhack"
+menuhack.Parent = ScreenGui
+menuhack.BackgroundColor3 = Color3.fromRGB(19, 255, 239)
+menuhack.BorderColor3 = Color3.fromRGB(0, 0, 0)
+menuhack.BorderSizePixel = 0
+menuhack.Position = UDim2.new(0.203883499, 0, 0.210918114, 0)
+menuhack.Size = UDim2.new(0, 810, 0, 494)
+menuhack.Visible = true
+menuhack.Active = true
+
+tenmoihub.Name = "tenmoihub"
+tenmoihub.Parent = menuhack
+tenmoihub.BackgroundColor3 = Color3.fromRGB(208, 115, 255)
+tenmoihub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tenmoihub.BorderSizePixel = 0
+tenmoihub.Size = UDim2.new(0, 810, 0, 64)
+tenmoihub.Font = Enum.Font.SourceSans
+tenmoihub.Text = "MOI HUB V2"
+tenmoihub.TextColor3 = Color3.fromRGB(0, 0, 0)
+tenmoihub.TextSize = 99.000
+
+nutexit.Name = "nutexit"
+nutexit.Parent = menuhack
+nutexit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nutexit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+nutexit.BorderSizePixel = 0
+nutexit.Position = UDim2.new(0.919753075, 0, 0, 0)
+nutexit.Size = UDim2.new(0, 65, 0, 64)
+nutexit.Font = Enum.Font.SourceSans
+nutexit.Text = "X"
+nutexit.TextColor3 = Color3.fromRGB(255, 0, 0)
+nutexit.TextSize = 73.000
+nutexit.MouseButton1Down:Connect(function()
+	menuhack.Visible = false
+	Frame.Visible = true
+	
+end)
+
+WAzureV2.Name = "WAzureV2"
+WAzureV2.Parent = menuhack
+WAzureV2.BackgroundColor3 = Color3.fromRGB(0, 13, 255)
+WAzureV2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WAzureV2.BorderSizePixel = 0
+WAzureV2.Position = UDim2.new(0.0271604937, 0, 0.178137645, 0)
+WAzureV2.Size = UDim2.new(0, 205, 0, 127)
+WAzureV2.Font = Enum.Font.SourceSans
+WAzureV2.Text = "W-Azure V2"
+WAzureV2.TextColor3 = Color3.fromRGB(32, 33, 40)
+WAzureV2.TextSize = 50.000
+WAzureV2.MouseButton1Down:Connect(function()
+	getgenv().Team = "Marines"
+
+	getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
+
+	getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
+
+	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+end)
+
+speedhub.Name = "speedhub"
+speedhub.Parent = menuhack
+speedhub.BackgroundColor3 = Color3.fromRGB(91, 255, 20)
+speedhub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speedhub.BorderSizePixel = 0
+speedhub.Position = UDim2.new(0.332098752, 0, 0.176113367, 0)
+speedhub.Size = UDim2.new(0, 198, 0, 152)
+speedhub.Font = Enum.Font.SourceSans
+speedhub.Text = "SPEED HUB"
+speedhub.TextColor3 = Color3.fromRGB(32, 33, 40)
+speedhub.TextSize = 50.000
+speedhub.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX", true))()
+end)
+
+RedzHub.Name = "RedzHub"
+RedzHub.Parent = menuhack
+RedzHub.BackgroundColor3 = Color3.fromRGB(255, 182, 64)
+RedzHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RedzHub.BorderSizePixel = 0
+RedzHub.Position = UDim2.new(0.0432098769, 0, 0.483805656, 0)
+RedzHub.Size = UDim2.new(0, 192, 0, 119)
+RedzHub.Font = Enum.Font.SourceSans
+RedzHub.Text = "Redz Hub"
+RedzHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+RedzHub.TextSize = 50.000
+RedzHub.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+end)
+
+AnbatocomHub.Name = "AnbatocomHub"
+AnbatocomHub.Parent = menuhack
+AnbatocomHub.BackgroundColor3 = Color3.fromRGB(255, 108, 10)
+AnbatocomHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AnbatocomHub.BorderSizePixel = 0
+AnbatocomHub.Position = UDim2.new(0.624691367, 0, 0.19838056, 0)
+AnbatocomHub.Size = UDim2.new(0, 284, 0, 131)
+AnbatocomHub.Font = Enum.Font.SourceSans
+AnbatocomHub.Text = "Anbatocom Hub"
+AnbatocomHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+AnbatocomHub.TextSize = 51.000
+AnbatocomHub.TextStrokeColor3 = Color3.fromRGB(67, 68, 84)
+AnbatocomHub.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/volongnhatmodsroblox/V2/main/T%C3%AAn%20Hub.lua"))()
+end)
+
+mota.Name = "mota"
+mota.Parent = menuhack
+mota.BackgroundColor3 = Color3.fromRGB(255, 236, 32)
+mota.BorderColor3 = Color3.fromRGB(0, 0, 0)
+mota.BorderSizePixel = 0
+mota.Position = UDim2.new(0, 0, 0.836032391, 0)
+mota.Size = UDim2.new(0, 810, 0, 81)
+mota.Font = Enum.Font.SourceSans
+mota.Text = "đây chỉ là bản tỏng hợp hack"
+mota.TextColor3 = Color3.fromRGB(0, 0, 0)
+mota.TextSize = 80.000
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.318858564, 0)
+Frame.Size = UDim2.new(0, 100, 0, 100)
+Frame.Visible = false
+
+on.Name = "on"
+on.Parent = Frame
+on.BackgroundColor3 = Color3.fromRGB(6, 255, 2)
+on.BorderColor3 = Color3.fromRGB(0, 0, 0)
+on.BorderSizePixel = 0
+on.Size = UDim2.new(0, 100, 0, 100)
+on.Font = Enum.Font.SourceSans
+on.Text = "open"
+on.TextColor3 = Color3.fromRGB(0, 0, 0)
+on.TextSize = 47.000
+on.MouseButton1Down:Connect(function()
+	Frame.Visible = false
+	menuhack.Visible = true
+
+end)
